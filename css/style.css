@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: 0.25s;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../images/1374076.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box {
+	height: 600px;
+	width: 350px;
+	padding: 20px;
+	background-color: #8d9099;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 30px;
+	box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.9), 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.display {
+	width: 100%;
+}
+
+.display input {
+    text-align: right;
+    caret-color: transparent;
+    font-size: 30px;
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #babecc;
+    box-shadow: inset -5px -5px 15px #fff9, inset 5px 5px 15px #0003;
+}
+
+.btns {
+	margin: 50px 0;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(4, auto);
+	grid-gap: 28px;	
+}
+
+#reset{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#reset,
+#clear{
+    font-size: 18px;
+}
+
+.btns input {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #babecc;
+    box-shadow: -5px -5px 10px #fff9, 5px 5px 10px #0003;
+}
+
+
+.btns .btn {
+    background: linear-gradient(145deg, #0002, #fff9);
+}
+
+
+.btns .btn:active {
+    background: linear-gradient(145deg, #0003, #fff9);
+
+    box-shadow: none;
+}
+
+
+.btns .sbtn,
+#eqbtn,
+#clear {
+    font-size: 30px;
+    color: #fff;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+}
+
+
+.btns #clear {
+    font-size: 20px;
+}
+
+
+.btns .sbtn:active,
+#eqbtn:active,
+#clear:active {
+    box-shadow: none;
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+@media only screen and (max-width: 370px) {
+    .box{
+        width: 290px;
+    }
+
+    .display input{
+        height: 90px;
+    }
+
+    .btns input {
+        height: 40px;
+        width: 40px;
+    }
+}
