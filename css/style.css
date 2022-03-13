@@ -18,7 +18,7 @@ body {
 }
 
 .box {
-	height: 600px;
+	max-height: 600px;
 	width: 350px;
 	padding: 20px;
 	background-color: #8d9099;
@@ -121,6 +121,7 @@ body {
 @media only screen and (max-width: 370px) {
     .box{
         width: 290px;
+        max-height: 520px;
     }
 
     .display input{
